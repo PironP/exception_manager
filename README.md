@@ -16,14 +16,14 @@ npm install --save exception_manager
 ```js
 let exception_manager 	= require('exception_manager');
 
-exception_manager.handleException(error, 'fileName.js', 10, window, 'serverAddress');
+exception_manager.handleException(error, 'Application Name', 'fileName.js', 10, window, 'serverAddress');
 
-exports.handleException = (error, fileName, lineNumber, window, server)
+exports.handleException = (error, appName, fileName, lineNumber, window, server)
 
 ```
 
 ## API
 
-### handleException(error, fileName, lineNumber, window, server)
+### handleException(error, appName, fileName, lineNumber, window, server)
 
 Send a json to a server
